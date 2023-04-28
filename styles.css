@@ -1,5 +1,11 @@
 
 
+body {
+    background-color: gray;
+    width: 80%;
+    margin:0;
+}
+
 /* UNCLAER WHICH PSEUDO CLASS TO USE https://www.w3schools.com/css/css_pseudo_classes.asp */
 .nav-coloring:focus {
     color:blue !important
