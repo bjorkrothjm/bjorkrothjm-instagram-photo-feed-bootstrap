@@ -1,0 +1,20 @@
+
+
+/* UNCLAER WHICH PSEUDO CLASS TO USE https://www.w3schools.com/css/css_pseudo_classes.asp */
+.nav-coloring:focus {
+    color:blue !important
+}
+
+.post-date {
+    font-size: 10px;
+}
+
+post-likes {
+    font-size: 11px;
+    font-weight: 600;
+    color: black;
+}
+
+img {
+    object-fit: cover;
+}
