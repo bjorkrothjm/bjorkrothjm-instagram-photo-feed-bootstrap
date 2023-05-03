@@ -11,7 +11,7 @@
     
 </head>
 <body>
-    <div class="container-fluid bg-white mx-auto">
+    <div class="container-fluid bg-white mx-auto pb-5 wrapper">
         <!--Header-->
         <div class="row">
             <div class="col-12 d-flex justify-content-between bg-light p-3">
@@ -25,8 +25,8 @@
                 <div>   
                     <ul class="nav"></ul>
                         <div class="dropdown">
-                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+                            <button class="btn btn-secondary dropdown-toggle m-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-gear"></i>
                             </button>
                             <ul class="dropdown-menu">
@@ -43,9 +43,11 @@
         <div class="row">
             <div class="col-12">
                 <ul class="nav nav-pills my-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                    <!-- Grid switcher/symbol--->
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active bg-body text-secondary nav-coloring" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells fa-xl"></i></button>
                     </li>
+                    <!-- Single post switcher/symbol--->
                     <li class="nav-item" role="presentation">
                         <button class="nav-link bg-body text-secondary nav-coloring" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square fa-xl"></i></button>
                     </li>
@@ -53,44 +55,56 @@
             </div>
         </div>
         <!--Feeds-->
-        <div class="row">
-            <div class="col-12">
-                <div class="tab-content" id="pills-tabContent">
-                    <!--Grid feed-->
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                        <div class="container-fluid">
-                            <div class="col-12">
-                                <div class="card-group">
-                                    <div class="card">
-                                    <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="card-img-top" alt="...">
-                                    </div>
-                                    <div class="card">
-                                        <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="card-img-top" alt="...">
-                                    </div>
-                                    <div class="card">
-                                        <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="card-img-top" alt="...">
-                                    </div>
-                                </div>                            
+        <div class="tab-content d-flex justify-content-center" id="pills-tabContent">
+            <!--Grid feed-->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+                    <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-grid p-1" alt="...">
+                    <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-grid p-1" alt="...">
+                    <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-grid p-1" alt="...">
+                    <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-grid p-1" alt="...">
+                    <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-grid p-1" alt="...">
+                    <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-grid p-1" alt="...">
+                    <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-grid p-1" alt="...">
+                    <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-grid p-1" alt="...">
+                    <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-grid p-1" alt="...">
+                </div>              
+            </div>
+            <!--Single post feed-->
+            <div class="tab-pane fade w-100" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-12 col-md-12 col-lg-8 single-post-wrapper">    
+                        <div class="card mb-5">
+                            <div class="card-body">
+                                <h4 class="card-title">My first instagram post!</h4>
+                                <span class="post-date">08/26</span>
+                            </div>
+                            <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-single-post-feed" alt="A view of Tuscany, Italy">
+                            <div class="card-body">
+                                <p class="post-likes">204 Likes</p>
+                                <p class="post-text">This is an example of a very good hoto that you can post on instagram</p>
                             </div>
                         </div>
-                    </div>
-                    <!--Single post feed-->
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-4 mx-auto">
-                                    <div class="card">
-                                        <div class="card-body d-flex justify-content-between p-1">
-                                            <h6 class="card-title">My first instagram post!</h6>
-                                            <span class="post-date">08/26</span>
-                                        </div>
-                                        <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" alt="A view of Tuscany, Italy">
-                                        <div class="card-body">
-                                            <p class="post-likes">204 Likes</p>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lea</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="card mb-5">
+                            <div class="card-body">
+                                <h4 class="card-title">My first instagram post!</h4>
+                                <span class="post-date">08/26</span>
+                            </div>
+                            <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-single-post-feed" alt="A view of Tuscany, Italy">
+                            <div class="card-body">
+                                <p class="post-likes">204 Likes</p>
+                                <p class="post-text">This is an example of a very good hoto that you can post on instagram</p>
+                            </div>
+                        </div>
+                        <div class="card mb-5">
+                            <div class="card-body">
+                                <h4 class="card-title">My first instagram post!</h4>
+                                <span class="post-date">08/26</span>
+                            </div>
+                            <img src="https://www.voyemo.com/wp-content/uploads/2020/05/Tuscany-6.jpg" class="img-single-post-feed" alt="A view of Tuscany, Italy">
+                            <div class="card-body">
+                                <p class="post-likes">204 Likes</p>
+                                <p class="post-text">This is an example of a very good hoto that you can post on instagram</p>
                             </div>
                         </div>
                     </div>
